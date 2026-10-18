@@ -1,0 +1,30 @@
+{
+  "id": "nsmbw-recomp",
+  "name": "NSMB Wii Multiplayer (Recompilación)",
+  "description": {
+    "es": "Recompilación estática nativa de New Super Mario Bros. Wii para teléfonos Android (arm64, Vulkan). Sin emulador ni JIT en tiempo de ejecución: el código de la consola se compila a código nativo. Multijugador por Wi-Fi local y Tailscale. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+    "en": "Native static recompilation of New Super Mario Bros. Wii for Android phones (arm64, Vulkan). No emulator and no JIT at runtime: the console code is compiled to native code. Multiplayer over local Wi-Fi and Tailscale. Requires importing the game data from your own copy of the game inside the app."
+  },
+  "author": {
+    "name": "WitherBlitz",
+    "contact": "https://github.com/WitherBlitz"
+  },
+  "license": "GPL-3.0-only",
+  "repo": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+  "asset_pattern": "^NSMBW-.*-android-arm64\\.apk$",
+  "requires_user_game": true,
+  "no_game_assets": true,
+  "source_url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+  "package": "com.wither.nsmbw",
+  "category": "platformer",
+  "min_sdk_port": 30,
+  "required_game": {
+    "title": "New Super Mario Bros. Wii (USA)",
+    "game_id": "SMNE01",
+    "revision": 1
+  },
+  "notes": {
+    "es": "Sin probar en GPUs Mali (casi todos los equipos MediaTek, Samsung Exynos y Google Tensor). Adreno necesitó workarounds de sus compiladores de shaders (Gráficos > Compatibilidad gráfica); Mali puede necesitar los suyos. Si lo pruebas, abre un issue en el repositorio del port con lo que veas.",
+    "en": "Untested on Mali GPUs (most MediaTek, Samsung Exynos and Google Tensor chips). Adreno needed workarounds for its shader compilers (Display > Graphics Compatibility); Mali may need its own. If you try one, please open an issue on the port's repository with what you see."
+  }
+}

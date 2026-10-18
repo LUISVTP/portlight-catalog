@@ -1,0 +1,27 @@
+# Valida las entradas del catálogo en cada pull request.
+# Validates the catalog entries on every pull request.
+#
+# Permisos mínimos: solo lectura. Sin pull_request_target: el workflow ejecuta
+# el código del PR sin token con escritura.
+# Minimal permissions: read-only. No pull_request_target: the PR's code runs
+# without a write-capable token.
+name: Validar entradas / Validate entries
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código / Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Validar entradas y esquema / Validate entries and schema
+        run: python3 scripts/merge_and_validate.py --check
+
+      - name: Informe / Report
+        run: python3 scripts/report.py | tee -a "$GITHUB_STEP_SUMMARY"

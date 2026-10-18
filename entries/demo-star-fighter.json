@@ -1,0 +1,25 @@
+{
+  "id": "demo-star-fighter",
+  "name": "Star Fighter (DEMO ficticia)",
+  "description": {
+    "es": "[DEMO] Entrada ficticia que no corresponde a ningún port real. Existe solo para probar la validación, la fusión y el informe del catálogo; los ids que empiezan por «demo-» no se publican en catalog.json.",
+    "en": "[DEMO] Fictional entry that does not correspond to any real port. It exists only to test the catalog's validation, merging and reporting; ids starting with «demo-» are never published in catalog.json."
+  },
+  "author": {
+    "name": "Portlight (ficticio)",
+    "contact": "https://example.com"
+  },
+  "license": "MIT",
+  "repo": "example/star-fighter-port",
+  "asset_pattern": "^StarFighter-.*-universal\\.apk$",
+  "requires_user_game": true,
+  "no_game_assets": true,
+  "source_url": "https://github.com/example/star-fighter-port",
+  "package": "com.example.starfighter",
+  "category": "action",
+  "min_sdk_port": 24,
+  "notes": {
+    "es": "[DEMO] Aviso ficticio de compatibilidad en español.",
+    "en": "[DEMO] Fictional compatibility warning in English."
+  }
+}

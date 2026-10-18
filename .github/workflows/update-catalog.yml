@@ -1,0 +1,94 @@
+# Consulta releases/latest (una llamada por port), regenera catalog.json,
+# lo publica en la rama main y despliega GitHub Pages con la Action oficial.
+# Fetches releases/latest (one call per port), regenerates catalog.json,
+# commits it to main and deploys GitHub Pages with the official Actions.
+#
+# Verificado / Verified (doc oficial / official docs):
+#  * Estructura de despliegue (configure-pages -> upload-pages-artifact ->
+#    deploy-pages, permisos pages: write + id-token: write, environment
+#    «github-pages»): actions/starter-workflows, pages/static.yml.
+#  * El origen de publicación del repo debe estar en «GitHub Actions»
+#    (Settings -> Pages): docs.github.com «Configuring a publishing source».
+#    Es un ajuste manual del propietario del repo (pendiente).
+# Todas las acciones van fijadas por SHA de commit (obtenido vía la API
+# oficial de GitHub: ref del tag -> commit).
+# All actions are pinned by commit SHA (obtened through the official GitHub
+# API: tag ref -> commit).
+name: Actualizar catálogo / Update catalog
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # cada 6 h, en UTC / every 6 h, UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [entries/**] # regenerar al fusionar entradas (PLAN §7.2) / regenerate on entry merges
+
+permissions:
+  contents: read
+
+# Un solo despliegue a la vez; no cancelar el que está en marcha.
+# One deployment at a time; never cancel the in-progress one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # para commitear catalog.json / to commit catalog.json
+    steps:
+      - name: Descargar el código / Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Consultar releases / Fetch releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # límite de 1000 peticiones/hora / 1000 requests/hour
+        run: python3 scripts/fetch_releases.py
+
+      - name: Fusionar y validar / Merge and validate
+        run: python3 scripts/merge_and_validate.py
+
+      - name: Informe / Report
+        run: python3 scripts/report.py | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit de catalog.json / Commit catalog.json
+        run: |
+          git config user.name "portlight-catalog-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          if git diff --cached --quiet; then
+            echo "catalog.json sin cambios / catalog.json unchanged"
+          else
+            git commit -m "chore: actualizar catalog.json / update catalog.json"
+            git push origin HEAD:main
+          fi
+
+      - name: Preparar el sitio / Prepare the site
+        run: |
+          mkdir -p site
+          cp catalog.json site/catalog.json
+          cp web/index.html site/index.html
+
+      - name: Configurar Pages / Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Subir el artefacto de Pages / Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write # OIDC para Pages / OIDC for Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar a Pages / Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

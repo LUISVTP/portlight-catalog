@@ -1,0 +1,187 @@
+# Portlight — Catálogo / Catalog
+
+**Español.** Catálogo comunitario de **ports de juegos para Android**. Cada entrada
+describe un port y apunta a las **Releases de su repositorio original en GitHub**;
+la app [Portlight](https://github.com/LUISVTP/portlight-app) descarga los APK solo
+desde ahí, verificando SHA-256 e identidad del paquete. **Este repositorio no aloja
+ni distribuye APKs**: solo publica [`catalog.json`](catalog.json) (metadatos) vía
+GitHub Pages.
+
+**English.** A community **catalogue of game ports for Android**. Each entry
+describes a port and points at the **Releases of its original GitHub repository**;
+the [Portlight](https://github.com/LUISVTP/portlight-app) app downloads APKs only
+from there, verifying the SHA-256 digest and the package identity. **This repository
+hosts and distributes no APKs**: it only publishes [`catalog.json`](catalog.json)
+(metadata) through GitHub Pages.
+
+- Catálogo publicado / Published catalog:
+  <https://luisvtp.github.io/portlight-catalog/catalog.json>
+- Esquema / Schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)
+  (JSON Schema draft 2020-12)
+
+---
+
+## Política de admisión / Admission policy
+
+**Español.**
+
+1. **Solo el repo original.** El campo `repo` es el repositorio del autor; los APK
+   se descargan únicamente de `https://github.com/{owner}/{repo}/releases/download/…`
+   (`asset_pattern` debe ser una expresión **anclada** con `^` y `$`).
+2. **Juego propio, sin assets.** `requires_user_game: true` y `no_game_assets: true`
+   son obligatorios (constantes): el port exige la copia del juego de cada persona
+   y no incluye recursos del juego. Si el port pide un juego concreto, se documenta
+   en `required_game` (título, código `game_id` y revisión).
+3. **Licencia verificada.** El campo `license` (ID SPDX) se toma leyendo el archivo
+   `LICENSE` del repositorio del port, nunca de notas o de third parties.
+4. **Metadatos, no binarios.** El catálogo no publica APKs, firmas ni claves. La
+   app verifica el digest SHA-256 de cada asset (si la Release lo expone) y el
+   nombre de paquete antes de instalar.
+5. **Dos idiomas.** `description` debe incluir español e inglés (basta uno para
+   validar, pero se exigen ambos en la revisión); `notes`, si existe, es
+   obligatoriamente bilingüe.
+6. **Un port por PR**, con `id` en minúsculas y guiones, y `category` del enum del
+   esquema (incluye `platformer`).
+7. **Avisos honestos.** `notes` sirve para compatibilidad probada o no (p. ej. GPUs
+   Mali sin probar); no se admiten afirmaciones de afiliación con las marcas de los
+   juegos.
+
+**English.**
+
+1. **Original repo only.** `repo` is the author's repository; APKs are downloaded
+   only from `https://github.com/{owner}/{repo}/releases/download/…`
+   (`asset_pattern` must be an **anchored** regular expression with `^` and `$`).
+2. **Your own game, no assets.** `requires_user_game: true` and
+   `no_game_assets: true` are mandatory (constants): the port requires everyone's
+   own game copy and ships no game assets. When a specific game is required,
+   `required_game` documents it (title, `game_id` and revision).
+3. **Verified license.** The `license` field (SPDX id) comes from reading the
+   port repository's `LICENSE` file, never from notes or third parties.
+4. **Metadata, not binaries.** The catalog publishes no APKs, signatures or keys.
+   The app verifies each asset's SHA-256 digest (when the Release exposes it) and
+   the package name before installing.
+5. **Two languages.** `description` must cover Spanish and English (one is enough
+   to validate, both are required in review); `notes`, when present, is
+   bilingual.
+6. **One port per PR**, with a lowercase-hyphen `id` and a `category` from the
+   schema enum (which includes `platformer`).
+7. **Honest warnings.** `notes` records tested or untested compatibility (e.g.
+   untested Mali GPUs); claims of affiliation with the games' brands are not
+   accepted.
+
+## Cómo proponer un port / How to propose a port
+
+**Español.**
+
+1. Haz **fork** de este repositorio.
+2. Crea `entries/<id>.json` copiando la estructura de
+   [`entries/nsmbw-recomp.json`](entries/nsmbw-recomp.json) y los campos del
+   [esquema](schema/catalog.schema.json) — recuerda: campos humanos solamente
+   (`status`, `release` y `last_checked` los genera la Action).
+3. Comprueba en local: `python scripts/merge_and_validate.py --check`.
+4. Abre un **pull request**. La Action *Validar entradas* revisa el esquema; un
+   revisor comprueba la licencia y los enlaces.
+5. Al fusionar, *Actualizar catálogo* consulta `releases/latest` del repo (una
+   llamada), regenera `catalog.json` y lo publica en Pages.
+
+**English.**
+
+1. **Fork** this repository.
+2. Create `entries/<id>.json` following
+   [`entries/nsmbw-recomp.json`](entries/nsmbw-recomp.json) and the
+   [schema](schema/catalog.schema.json) — human fields only (`status`, `release`
+   and `last_checked` are generated by the Action).
+3. Check locally: `python scripts/merge_and_validate.py --check`.
+4. Open a **pull request**. The *Validate entries* Action checks the schema; a
+   reviewer checks the license and the links.
+5. On merge, *Update catalog* queries the repo's `releases/latest` (one call),
+   regenerates `catalog.json` and publishes it on Pages.
+
+## Estados del catálogo / Catalog status
+
+| Estado / Status | Significado / Meaning |
+|---|---|
+| `active` | Hay un release con al APK que cumple `asset_pattern`. / A release exists with an APK matching `asset_pattern`. |
+| `no-release` | Sin releases publicados o sin APK que cumpla el patrón. / No published releases, or no APK matching the pattern. |
+| `broken` | La última consulta falló (red, HTTP) o hay ambigüedad de ABI; **se conservan los datos previos**. / The last check failed (network, HTTP) or the ABI is ambiguous; **previous data is kept**. |
+| `removed` | Retirado a mano por el mantenimiento. / Manually retired by maintainers. |
+
+## Entradas demo / Demo entries
+
+**Español.** Los ids que empiezan por `demo-` (p. ej.
+[`entries/demo-star-fighter.json`](entries/demo-star-fighter.json)) son entradas
+ficticias: se **validan** (prueban el pipeline) pero **no se publican** en
+`catalog.json` ni se consultan en la red.
+
+**English.** Ids starting with `demo-` (e.g.
+[`entries/demo-star-fighter.json`](entries/demo-star-fighter.json)) are fictional:
+they are **validated** (they exercise the pipeline) but **never published** in
+`catalog.json` nor fetched from the network.
+
+## Scripts / Scripts
+
+**Español.** Python 3 estándar, sin dependencias externas:
+
+```bash
+python scripts/merge_and_validate.py --check   # validar entradas (CI en PRs)
+python scripts/fetch_releases.py               # 1 petición GET a releases/latest por port
+python scripts/merge_and_validate.py           # fusiona y escribe catalog.json
+python scripts/report.py                       # informe markdown (consola o $GITHUB_STEP_SUMMARY)
+```
+
+`fetch_releases.py` usa `GITHUB_TOKEN`/`GH_TOKEN` si existen; si un repo falla,
+conserva los datos previos y anota la causa en `build/fetched.json` y en el
+informe.
+
+**English.** Standard Python 3, no external dependencies (commands above).
+`fetch_releases.py` uses `GITHUB_TOKEN`/`GH_TOKEN` when present; if a repo fails,
+it keeps the previous data and records the cause in `build/fetched.json` and the
+report.
+
+## Integración continua / Workflows
+
+**Español.**
+
+- [`validate.yml`](.github/workflows/validate.yml): en cada **pull request**,
+  valida entradas y esquema (`contents: read`, sin `pull_request_target`).
+- [`update-catalog.yml`](.github/workflows/update-catalog.yml): cada **6 h (UTC)**,
+  con `workflow_dispatch` y al fusionar cambios en `entries/**`; consulta la API,
+  regenera y commitea `catalog.json` y **despliega GitHub Pages**.
+
+Todas las acciones de terceros van **fijadas por SHA de commit**.
+
+**English.**
+
+- [`validate.yml`](.github/workflows/validate.yml): on every **pull request**,
+  validates entries and schema (`contents: read`, no `pull_request_target`).
+- [`update-catalog.yml`](.github/workflows/update-catalog.yml): every **6 h
+  (UTC)**, via `workflow_dispatch` and on merges touching `entries/**`; queries
+  the API, regenerates and commits `catalog.json` and **deploys GitHub Pages**.
+
+All third-party actions are **pinned by commit SHA**.
+
+## Verificaciones (2026-10-18) / Verifications
+
+| Elemento / Item | Estado / Status | Fuente / Source |
+|---|---|---|
+| Estructura del despliegue en Pages: `configure-pages` → `upload-pages-artifact` → `deploy-pages`, permisos `pages: write` + `id-token: write`, `environment: github-pages`, concurrency `pages` | **Verificado / Verified** | Starter oficial `pages/static.yml` en [actions/starter-workflows](https://github.com/actions/starter-workflows/blob/main/pages/static.yml) |
+| El origen de publicación del repo debe configurarse en **Settings → Pages → Source: GitHub Actions** | **Verificado / Verified** | [docs.github.com — Configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) |
+| Activar ese ajuste en `LUISVTP/portlight-catalog` tras el primer push | **Supuesto / pendiente manual** — requiere acceso a los ajustes del repositorio | — |
+| Anclaje de acciones por SHA de commit (`checkout` v7.0.1, `configure-pages` v6.0.0, `upload-pages-artifact` v5.0.0, `deploy-pages` v5.0.1) | **Verificado / Verified** vía API oficial (ref del tag → commit) | `api.github.com` |
+| `GITHUB_TOKEN` con límite de 1000 peticiones/hora dentro de Actions | **Verificado / Verified** | [docs.github.com — Rate limits for the GitHub API](https://docs.github.com/en/rest/overview/rate-limits-for-the-rest-api) |
+
+**English.** Rows are the same as above; the only pending item is enabling
+**Settings → Pages → Source: GitHub Actions** on the repository, which cannot be
+done from a workflow.
+
+## Licencia y créditos / License and credits
+
+**Español.** Este repositorio (esquema, scripts, workflows y textos) es software
+libre con licencia [GPL-3.0](LICENSE). Los ports indexados conservan sus propias
+licencias; el crédito a sus autores, con la verificación de licencias, está en
+[CREDITS.md](CREDITS.md). **No afiliado con Nintendo.**
+
+**English.** This repository (schema, scripts, workflows and texts) is free
+software under [GPL-3.0](LICENSE). Indexed ports keep their own licenses; credit
+to their authors, with license verification, lives in [CREDITS.md](CREDITS.md).
+**Not affiliated with Nintendo.**

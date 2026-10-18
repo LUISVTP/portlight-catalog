@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/LUISVTP/portlight-catalog/main/schema/catalog.schema.json",
+  "title": "Catálogo de Portlight / Portlight catalog",
+  "description": "Esquema de catalog.json, el catálogo que la app Portlight descarga desde GitHub Pages. No contiene APKs: solo metadatos y enlaces a las Releases de los repositorios originales. / Schema of catalog.json, the catalog the Portlight app downloads from GitHub Pages. It holds no APKs: only metadata and links to the original repositories' Releases.",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "ports"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "description": "Versión del esquema; la app solo acepta 1. / Schema version; the app only accepts 1."
+    },
+    "generated_at": {
+      "$ref": "#/$defs/timestamp",
+      "description": "Instante (UTC) en que la Action generó el catálogo. / UTC instant the Action generated the catalog."
+    },
+    "ports": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/port" },
+      "description": "Entradas del catálogo, ordenadas por id. / Catalog entries, sorted by id."
+    }
+  },
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Texto bilingüe: basta con uno de los idiomas, pero se recomienda usar ambos. / Bilingual text: any one language is enough, but both are recommended.",
+      "properties": {
+        "es": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      },
+      "anyOf": [{ "required": ["es"] }, { "required": ["en"] }]
+    },
+    "bilingualText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["es", "en"],
+      "description": "Texto bilingüe obligatorio en español e inglés. / Bilingual text, Spanish and English required.",
+      "properties": {
+        "es": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "description": "Autor del port. / Author of the port.",
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "contact": {
+          "type": "string",
+          "pattern": "^https://",
+          "description": "Página o perfil público del autor. / Author's public page or profile."
+        }
+      }
+    },
+    "requiredGame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "game_id", "revision"],
+      "description": "Copia del juego que el usuario debe aportar (requires_user_game). / Game copy the user must supply (requires_user_game).",
+      "properties": {
+        "title": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "game_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]{4,10}$",
+          "description": "Código de la partida impresa en el disco, p. ej. SMNE01. / Disc game code, e.g. SMNE01."
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Revisión del disco. / Disc revision."
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "size", "url"],
+      "description": "APK publicado como asset de una Release del repo original. / APK published as an asset of a Release in the original repo.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^/]+$",
+          "description": "Nombre del archivo, sin barras. / File name, no slashes."
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Tamaño en bytes según la API de GitHub. / Size in bytes from the GitHub API."
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://github\\.com/[^/]+/[^/]+/releases/download/",
+          "description": "browser_download_url del asset: solo descargas desde Releases del repo original. / Asset browser_download_url: downloads only from the original repo's Releases."
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-fA-F]{64}$",
+          "description": "Digest SHA-256 expuesto por GitHub; la app lo verifica antes de instalar. / SHA-256 digest exposed by GitHub; the app verifies it before installing."
+        },
+        "abi": {
+          "enum": ["arm64-v8a", "armeabi-v7a", "x86_64", "x86", "universal"],
+          "description": "ABI inferida del nombre del asset, sin adivinar. / ABI inferred from the asset name, never guessed."
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tag", "source_url_release", "assets"],
+      "description": "Último release estable publicado, generado por la Action. / Latest published stable release, generated by the Action.",
+      "properties": {
+        "tag": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "published_at": { "$ref": "#/$defs/timestamp" },
+        "source_url_release": {
+          "type": "string",
+          "pattern": "^https://github\\.com/[^/]+/[^/]+/releases/tag/",
+          "description": "Página del release para el enlace «ver original». / Release page for the «view original» link."
+        },
+        "assets": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/asset" }
+        }
+      }
+    },
+    "port": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "description",
+        "author",
+        "license",
+        "repo",
+        "asset_pattern",
+        "requires_user_game",
+        "no_game_assets",
+        "source_url"
+      ],
+      "description": "Un port indexado. Los campos status, release y last_checked los genera la Action; no se editan en entries/. / An indexed port. The status, release and last_checked fields are generated by the Action; do not edit them in entries/.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{2,63}$",
+          "description": "Identificador estable. Los ids que empiezan por «demo-» se validan pero no se publican. / Stable identifier. Ids starting with «demo-» are validated but not published."
+        },
+        "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "author": { "$ref": "#/$defs/author" },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "Identificador SPDX de la licencia del port, verificada leyendo su LICENSE. / SPDX identifier of the port's license, verified by reading its LICENSE file."
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*(/[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*)+$",
+          "description": "Repositorio original en GitHub, como propietario/nombre. / Original GitHub repository, as owner/name."
+        },
+        "asset_pattern": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Expresión regular anclada (con ^ y $) que identifica los APK del port entre los assets de la Release. / Anchored regular expression (with ^ and $) identifying the port's APKs among the Release assets."
+        },
+        "requires_user_game": { "const": true },
+        "no_game_assets": { "const": true },
+        "source_url": {
+          "type": "string",
+          "pattern": "^https://",
+          "description": "Página principal del port (normalmente el repo original). / Main page of the port (usually the original repo)."
+        },
+        "screenshots": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^https://" },
+          "description": "Capturas alojadas por el autor, solo con https. / Screenshots hosted by the author, https only."
+        },
+        "package": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z0-9_]+)+$",
+          "description": "Nombre de paquete esperado del APK; la app lo compara tras descargarlo. / Expected APK package name; the app compares it after downloading."
+        },
+        "category": {
+          "enum": ["action", "racing", "rpg", "strategy", "puzzle", "adventure", "simulation", "platformer", "other"],
+          "description": "Categoría del juego. Si falta, la app usa «other». / Game category. The app falls back to «other» when missing."
+        },
+        "min_sdk_port": {
+          "type": "integer",
+          "minimum": 21,
+          "maximum": 40,
+          "description": "Versión de Android mínima que exige el port. / Minimum Android version required by the port."
+        },
+        "status": {
+          "enum": ["active", "no-release", "broken", "removed"],
+          "description": "Generado por la Action: active = hay APK; no-release = sin releases o sin APK que cumpla el patrón; broken = comprobación fallida (conservando los datos previos). removed lo marca una persona a mano. / Generated by the Action: active = APK available; no-release = no releases or no APK matching the pattern; broken = check failed (previous data kept). removed is set manually."
+        },
+        "required_game": { "$ref": "#/$defs/requiredGame" },
+        "notes": {
+          "$ref": "#/$defs/bilingualText",
+          "description": "Avisos de compatibilidad, obligatoriamente en español e inglés. / Compatibility warnings, in Spanish and English."
+        },
+        "release": { "$ref": "#/$defs/release" },
+        "last_checked": {
+          "$ref": "#/$defs/timestamp",
+          "description": "Última comprobación del release contra la API de GitHub. / Last check of the release against the GitHub API."
+        }
+      }
+    }
+  }
+}
