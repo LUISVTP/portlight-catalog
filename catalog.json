@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T20:21:24Z",
+  "generated_at": "2026-10-19T21:08:22Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -40,7 +40,171 @@
         ],
         "published_at": "2026-10-19T01:48:09Z"
       },
-      "last_checked": "2026-10-19T20:21:23Z"
+      "last_checked": "2026-10-19T21:08:20Z"
+    },
+    {
+      "id": "naruto-rise-of-a-ninja",
+      "name": "Naruto: Rise of a Ninja (Android)",
+      "description": {
+        "es": "Port no oficial de Naruto: Rise of a Ninja (Xbox 360) para Android. El ejecutable del juego y su biblioteca de IA se recompilan estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of Naruto: Rise of a Ninja (Xbox 360) for Android. The game's executable and its AI library are statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "Masterllgod",
+        "contact": "https://github.com/Masterllgod"
+      },
+      "license": "LicenseRef-Proprietary",
+      "repo": "Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+      "asset_pattern": "^NarutoRiseOfANinja-PortNativo-.*-arm64\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+      "package": "com.naruto.port",
+      "category": "action",
+      "min_sdk_port": 30,
+      "notes": {
+        "es": "Requiere tu propia copia de Naruto: Rise of a Ninja para Xbox 360, versión NTSC-U (América del Norte): el default.xex debe coincidir (Title ID 555307E5, SHA-1 3174cb24c35a66019f38e5378a4da298ac1ebf31) y también el AI2C.dll (SHA-1 c412aaf5873f77394ab1e246189f43df423a9e6b); la carpeta incluye default.xex, AI2C.dll, naruto.bf, soundxe, media y los vídeos (unos 4,5 GB). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; probado por el autor en Mali-G720. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 40 MB.",
+        "en": "Requires your own copy of Naruto: Rise of a Ninja for Xbox 360, NTSC-U version (North America): the default.xex must match (Title ID 555307E5, SHA-1 3174cb24c35a66019f38e5378a4da298ac1ebf31) and so must AI2C.dll (SHA-1 c412aaf5873f77394ab1e246189f43df423a9e6b); the folder includes default.xex, AI2C.dll, naruto.bf, soundxe, media and the videos (about 4.5 GB). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; tested by the author on Mali-G720. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 40 MB."
+      },
+      "status": "active",
+      "release": {
+        "tag": "v0.2",
+        "source_url_release": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/tag/v0.2",
+        "assets": [
+          {
+            "name": "NarutoRiseOfANinja-PortNativo-v0.2-arm64.apk",
+            "size": 40480955,
+            "url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/download/v0.2/NarutoRiseOfANinja-PortNativo-v0.2-arm64.apk",
+            "digest": "sha256:4bfdee073d1ab4ec0bd5860d40d3b1c444d4bd153612d859ba1d16335d8b397c",
+            "abi": "arm64-v8a"
+          }
+        ],
+        "published_at": "2026-10-14T21:03:47Z"
+      },
+      "last_checked": "2026-10-19T21:08:21Z"
+    },
+    {
+      "id": "naruto-storm-2",
+      "name": "Naruto Shippuden: Ultimate Ninja Storm 2 (Android)",
+      "description": {
+        "es": "Port no oficial de Naruto Shippuden: Ultimate Ninja Storm 2 (Xbox 360) para Android. El ejecutable del juego se recompila estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of Naruto Shippuden: Ultimate Ninja Storm 2 (Xbox 360) for Android. The game's executable is statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "Masterllgod",
+        "contact": "https://github.com/Masterllgod"
+      },
+      "license": "LicenseRef-Proprietary",
+      "repo": "Masterllgod/naruto-storm-2-port-nativo",
+      "asset_pattern": "^NarutoStorm2-PortNativo-.*-arm64\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
+      "package": "com.naruto.storm2",
+      "category": "action",
+      "min_sdk_port": 30,
+      "notes": {
+        "es": "Requiere tu propia copia de Naruto Shippuden: Ultimate Ninja Storm 2 para Xbox 360, versión NTSC-U (América del Norte) o NTSC-J (Japón), sin PAL: el default.xex debe coincidir (Title ID 4E4D0819, SHA-1 7e7d863f6e35b4294f392f7f3331056dc8e99002). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; en Snapdragon permite importar drivers Turnip (AdrenoTools) desde su menú y en Mali usa el driver del sistema. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 19 MB.",
+        "en": "Requires your own copy of Naruto Shippuden: Ultimate Ninja Storm 2 for Xbox 360, NTSC-U (North America) or NTSC-J (Japan) version, no PAL: the default.xex must match (Title ID 4E4D0819, SHA-1 7e7d863f6e35b4294f392f7f3331056dc8e99002). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; on Snapdragon it allows importing Turnip drivers (AdrenoTools) from its menu, and on Mali it uses the system driver. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 19 MB."
+      },
+      "status": "active",
+      "release": {
+        "tag": "v0.3.1",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/tag/v0.3.1",
+        "assets": [
+          {
+            "name": "NarutoStorm2-PortNativo-v0.3.1-arm64.apk",
+            "size": 18869629,
+            "url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/download/v0.3.1/NarutoStorm2-PortNativo-v0.3.1-arm64.apk",
+            "digest": "sha256:71ee40c663428479a343efdbabc3266a4c531d77fe86a7536ddb3f66a5eb9b5d",
+            "abi": "arm64-v8a"
+          }
+        ],
+        "published_at": "2026-10-18T05:57:34Z"
+      },
+      "last_checked": "2026-10-19T21:08:21Z"
+    },
+    {
+      "id": "naruto-storm-3-fb",
+      "name": "Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst (Android)",
+      "description": {
+        "es": "Port no oficial de Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst (Xbox 360) para Android. El ejecutable del juego se recompila estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst (Xbox 360) for Android. The game's executable is statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "Masterllgod",
+        "contact": "https://github.com/Masterllgod"
+      },
+      "license": "LicenseRef-Proprietary",
+      "repo": "Masterllgod/naruto-storm-3-full-burst-port-nativo",
+      "asset_pattern": "^NarutoStorm3FullBurst-PortNativo-.*-arm64\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo",
+      "package": "com.naruto.storm3",
+      "category": "action",
+      "min_sdk_port": 30,
+      "notes": {
+        "es": "Requiere tu propia copia de Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst para Xbox 360, versión NTSC-U (América del Norte): el default.xex debe coincidir (Title ID 4E4D085C, SHA-1 f7ad65e26a00df6c29c9d34b291819593e455e9f); la carpeta incluye default.xex, nxeart, AvatarAssetPack, data y datafb (unos 7 GB). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; en Snapdragon permite importar drivers Turnip (AdrenoTools) desde su menú y en Mali usa el driver del sistema. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 14 MB.",
+        "en": "Requires your own copy of Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst for Xbox 360, NTSC-U version (North America): the default.xex must match (Title ID 4E4D085C, SHA-1 f7ad65e26a00df6c29c9d34b291819593e455e9f); the folder includes default.xex, nxeart, AvatarAssetPack, data and datafb (about 7 GB). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; on Snapdragon it allows importing Turnip drivers (AdrenoTools) from its menu, and on Mali it uses the system driver. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 14 MB."
+      },
+      "status": "active",
+      "release": {
+        "tag": "v0.3.1",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/tag/v0.3.1",
+        "assets": [
+          {
+            "name": "NarutoStorm3FullBurst-PortNativo-v0.3.1-arm64.apk",
+            "size": 14083012,
+            "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/download/v0.3.1/NarutoStorm3FullBurst-PortNativo-v0.3.1-arm64.apk",
+            "digest": "sha256:89fda15b1c4b0b5338ecc31d90655ea7b4f63a4dbcfaa327446b8078f29dc847",
+            "abi": "arm64-v8a"
+          }
+        ],
+        "published_at": "2026-10-18T03:53:23Z"
+      },
+      "last_checked": "2026-10-19T21:08:21Z"
+    },
+    {
+      "id": "naruto-storm-generations",
+      "name": "Naruto Shippuden: Ultimate Ninja Storm Generations (Android)",
+      "description": {
+        "es": "Port no oficial de Naruto Shippuden: Ultimate Ninja Storm Generations (Xbox 360) para Android. El ejecutable del juego se recompila estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of Naruto Shippuden: Ultimate Ninja Storm Generations (Xbox 360) for Android. The game's executable is statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "Masterllgod",
+        "contact": "https://github.com/Masterllgod"
+      },
+      "license": "LicenseRef-Proprietary",
+      "repo": "Masterllgod/naruto-storm-generations-port-nativo",
+      "asset_pattern": "^NarutoStormGenerations-PortNativo-.*-arm64\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
+      "package": "com.naruto.stormgenerations",
+      "category": "action",
+      "min_sdk_port": 30,
+      "notes": {
+        "es": "Requiere tu propia copia de Naruto Shippuden: Ultimate Ninja Storm Generations para Xbox 360, versión NTSC-U (América del Norte): el default.xex debe coincidir (Title ID 4E4D0842, SHA-1 644359009af057b70fbdb0d48604222141416729); la carpeta incluye default.xex, nxeart y data (unos 6 GB). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; en Snapdragon permite importar drivers Turnip (AdrenoTools) desde su menú y en Mali usa el driver del sistema. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 14 MB.",
+        "en": "Requires your own copy of Naruto Shippuden: Ultimate Ninja Storm Generations for Xbox 360, NTSC-U version (North America): the default.xex must match (Title ID 4E4D0842, SHA-1 644359009af057b70fbdb0d48604222141416729); the folder includes default.xex, nxeart and data (about 6 GB). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; on Snapdragon it allows importing Turnip drivers (AdrenoTools) from its menu, and on Mali it uses the system driver. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 14 MB."
+      },
+      "status": "active",
+      "release": {
+        "tag": "v0.3.5",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.3.5",
+        "assets": [
+          {
+            "name": "NarutoStormGenerations-PortNativo-v0.3.5-arm64.apk",
+            "size": 14202635,
+            "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.3.5/NarutoStormGenerations-PortNativo-v0.3.5-arm64.apk",
+            "digest": "sha256:7458f10765705b222b0283dd62cfc2bb9a96cf6fdcc8b4137139abfd402ebd65",
+            "abi": "arm64-v8a"
+          }
+        ],
+        "published_at": "2026-10-18T14:31:10Z"
+      },
+      "last_checked": "2026-10-19T21:08:21Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -86,7 +250,47 @@
         ],
         "published_at": "2026-10-14T00:12:09Z"
       },
-      "last_checked": "2026-10-19T20:21:24Z"
+      "last_checked": "2026-10-19T21:08:22Z"
+    },
+    {
+      "id": "unleashed-recomp-android",
+      "name": "Unleashed Recompiled (Android)",
+      "description": {
+        "es": "Port no oficial de Sonic Unleashed (Xbox 360) para Android. Es una recompilación estática del ejecutable del juego a código nativo ARM64, sin emulador: la app incluye controles táctiles, soporte de mando, gestor de mods y drivers Turnip para GPUs Adreno. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of Sonic Unleashed (Xbox 360) for Android. It is a static recompilation of the game's executable to native ARM64 code, with no emulator: the app includes touch controls, gamepad support, a mod manager and Turnip drivers for Adreno GPUs. Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "SansNope",
+        "contact": "https://github.com/SansNope"
+      },
+      "license": "GPL-3.0-only",
+      "repo": "SansNope/UnleashedRecomp-Android",
+      "asset_pattern": "^UnleashedRecomp_.*\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/SansNope/UnleashedRecomp-Android",
+      "package": "com.sega.sonicunr",
+      "category": "action",
+      "min_sdk_port": 29,
+      "notes": {
+        "es": "Port no oficial de un proyecto de la comunidad; el autor lo describe como experimental. Requiere tu propia copia de Sonic Unleashed para Xbox 360: la app instala un volcado con las carpetas game y update (y dlc opcional). Requiere dispositivo ARM64 y Android 10 o superior. Funciona con GPU Adreno (drivers Turnip incluidos); las Mali recientes son experimentales y PowerVR/Xclipse sin probar. Permite importar drivers Vulkan de la comunidad manualmente; la app se actualiza desde las Releases de su propio repo con verificación de firma y SHA-256. APK de unos 70 MB; los archivos del juego ocupan varios GB.",
+        "en": "Unofficial port from the community; the author describes it as experimental. Requires your own copy of Sonic Unleashed for Xbox 360: the app installs a dump with the game and update folders (and optional dlc). Requires an ARM64 device and Android 10 or higher. Works with Adreno GPUs (bundled Turnip drivers); recent Mali GPUs are experimental and PowerVR/Xclipse are untested. Community Vulkan drivers can be imported manually; the app updates itself from its own repo's Releases with signature and SHA-256 verification. APK of about 70 MB; game files take several GB."
+      },
+      "status": "active",
+      "release": {
+        "tag": "v0.6.1",
+        "source_url_release": "https://github.com/SansNope/UnleashedRecomp-Android/releases/tag/v0.6.1",
+        "assets": [
+          {
+            "name": "UnleashedRecomp_0.6.1.apk",
+            "size": 70169911,
+            "url": "https://github.com/SansNope/UnleashedRecomp-Android/releases/download/v0.6.1/UnleashedRecomp_0.6.1.apk",
+            "digest": "sha256:05717f167db907ca0d0f8e45112613c7e24ef0737ecdc5e192a430a047f74c34"
+          }
+        ],
+        "published_at": "2026-10-10T02:06:44Z"
+      },
+      "last_checked": "2026-10-19T21:08:22Z"
     }
   ]
 }
