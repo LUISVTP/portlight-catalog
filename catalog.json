@@ -1,7 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T17:51:16Z",
+  "generated_at": "2026-10-19T19:47:45Z",
   "ports": [
+    {
+      "id": "gow3-android",
+      "name": "God of War III Remastered (Android)",
+      "description": {
+        "es": "Port no oficial de God of War III Remastered (PS4) para teléfonos Android arm64. No es una recompilación: traduce en tiempo de ejecución el código x86-64 del juego con FEXCore y convierte los gráficos a Vulkan mediante el driver Turnip (GPU Adreno). Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+        "en": "Unofficial port of God of War III Remastered (PS4) for arm64 Android phones. It is not a recompilation: it dynamically translates the game's x86-64 code at runtime with FEXCore and converts graphics to Vulkan through the Turnip driver (Adreno GPUs). Requires importing the game files from your own copy inside the app."
+      },
+      "author": {
+        "name": "zFitness",
+        "contact": "https://github.com/zFitness"
+      },
+      "license": "GPL-2.0-or-later",
+      "repo": "zFitness/gow3_android",
+      "asset_pattern": "^God\\.of\\.War\\.III-.*-android\\d+\\.apk$",
+      "requires_user_game": true,
+      "no_game_assets": true,
+      "source_url": "https://github.com/zFitness/gow3_android",
+      "package": "com.gow3.android",
+      "category": "action",
+      "min_sdk_port": 28,
+      "notes": {
+        "es": "Requiere los archivos de tu propia PS4: CUSA01740 con la actualización 01.02 aplicada (carpeta con eboot.bin, sce_module y sce_sys). Solo GPU Adreno (driver Turnip); sin soporte declarado para Mali ni otras GPU. El autor indica que esta versión no se verificó en dispositivos ni en jugabilidad y que el proyecto está en desarrollo. Descarga grande (unos 294 MB).",
+        "en": "Requires the files from your own PS4: CUSA01740 with the 01.02 update applied (a folder containing eboot.bin, sce_module and sce_sys). Adreno GPUs only (Turnip driver); no declared support for Mali or other GPUs. The author states this build was not verified on devices or in gameplay and that the project is work in progress. Large download (about 294 MB)."
+      },
+      "status": "no-release",
+      "last_checked": "2026-10-19T19:47:45Z"
+    },
     {
       "id": "nsmbw-recomp",
       "name": "NSMB Wii Multiplayer (Recompilación)",
@@ -46,7 +73,7 @@
         ],
         "published_at": "2026-10-14T00:12:09Z"
       },
-      "last_checked": "2026-10-19T17:51:16Z"
+      "last_checked": "2026-10-19T19:47:45Z"
     }
   ]
 }
