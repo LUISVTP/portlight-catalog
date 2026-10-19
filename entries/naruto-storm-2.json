@@ -1,0 +1,25 @@
+{
+  "id": "naruto-storm-2",
+  "name": "Naruto Shippuden: Ultimate Ninja Storm 2 (Android)",
+  "description": {
+    "es": "Port no oficial de Naruto Shippuden: Ultimate Ninja Storm 2 (Xbox 360) para Android. El ejecutable del juego se recompila estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+    "en": "Unofficial port of Naruto Shippuden: Ultimate Ninja Storm 2 (Xbox 360) for Android. The game's executable is statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+  },
+  "author": {
+    "name": "Masterllgod",
+    "contact": "https://github.com/Masterllgod"
+  },
+  "license": "LicenseRef-Proprietary",
+  "repo": "Masterllgod/naruto-storm-2-port-nativo",
+  "asset_pattern": "^NarutoStorm2-PortNativo-.*-arm64\\.apk$",
+  "requires_user_game": true,
+  "no_game_assets": true,
+  "source_url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
+  "package": "com.naruto.storm2",
+  "category": "action",
+  "min_sdk_port": 30,
+  "notes": {
+    "es": "Requiere tu propia copia de Naruto Shippuden: Ultimate Ninja Storm 2 para Xbox 360, versión NTSC-U (América del Norte) o NTSC-J (Japón), sin PAL: el default.xex debe coincidir (Title ID 4E4D0819, SHA-1 7e7d863f6e35b4294f392f7f3331056dc8e99002). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; en Snapdragon permite importar drivers Turnip (AdrenoTools) desde su menú y en Mali usa el driver del sistema. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 19 MB.",
+    "en": "Requires your own copy of Naruto Shippuden: Ultimate Ninja Storm 2 for Xbox 360, NTSC-U (North America) or NTSC-J (Japan) version, no PAL: the default.xex must match (Title ID 4E4D0819, SHA-1 7e7d863f6e35b4294f392f7f3331056dc8e99002). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; on Snapdragon it allows importing Turnip drivers (AdrenoTools) from its menu, and on Mali it uses the system driver. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 19 MB."
+  }
+}

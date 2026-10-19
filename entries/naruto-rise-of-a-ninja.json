@@ -1,0 +1,25 @@
+{
+  "id": "naruto-rise-of-a-ninja",
+  "name": "Naruto: Rise of a Ninja (Android)",
+  "description": {
+    "es": "Port no oficial de Naruto: Rise of a Ninja (Xbox 360) para Android. El ejecutable del juego y su biblioteca de IA se recompilan estáticamente de PowerPC a ARM64, sin emulador de CPU, con gráficos Vulkan y controles táctiles. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+    "en": "Unofficial port of Naruto: Rise of a Ninja (Xbox 360) for Android. The game's executable and its AI library are statically recompiled from PowerPC to ARM64 with no CPU emulator, Vulkan graphics and touch controls. Requires importing the game files from your own copy inside the app."
+  },
+  "author": {
+    "name": "Masterllgod",
+    "contact": "https://github.com/Masterllgod"
+  },
+  "license": "LicenseRef-Proprietary",
+  "repo": "Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+  "asset_pattern": "^NarutoRiseOfANinja-PortNativo-.*-arm64\\.apk$",
+  "requires_user_game": true,
+  "no_game_assets": true,
+  "source_url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+  "package": "com.naruto.port",
+  "category": "action",
+  "min_sdk_port": 30,
+  "notes": {
+    "es": "Requiere tu propia copia de Naruto: Rise of a Ninja para Xbox 360, versión NTSC-U (América del Norte): el default.xex debe coincidir (Title ID 555307E5, SHA-1 3174cb24c35a66019f38e5378a4da298ac1ebf31) y también el AI2C.dll (SHA-1 c412aaf5873f77394ab1e246189f43df423a9e6b); la carpeta incluye default.xex, AI2C.dll, naruto.bf, soundxe, media y los vídeos (unos 4,5 GB). Requiere dispositivo ARM64 y Android 11 o superior. GPU Vulkan 1.1 o superior, Adreno o Mali; probado por el autor en Mali-G720. Proyecto de fans de código cerrado: el repositorio publica documentación y los APK, sin código fuente que auditar. APK de unos 40 MB.",
+    "en": "Requires your own copy of Naruto: Rise of a Ninja for Xbox 360, NTSC-U version (North America): the default.xex must match (Title ID 555307E5, SHA-1 3174cb24c35a66019f38e5378a4da298ac1ebf31) and so must AI2C.dll (SHA-1 c412aaf5873f77394ab1e246189f43df423a9e6b); the folder includes default.xex, AI2C.dll, naruto.bf, soundxe, media and the videos (about 4.5 GB). Requires an ARM64 device and Android 11 or higher. Vulkan 1.1 or higher GPU, Adreno or Mali; tested by the author on Mali-G720. Closed-source fan project: the repository publishes documentation and the APKs, with no source code to audit. APK of about 40 MB."
+  }
+}

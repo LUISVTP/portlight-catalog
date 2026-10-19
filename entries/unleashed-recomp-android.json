@@ -1,0 +1,25 @@
+{
+  "id": "unleashed-recomp-android",
+  "name": "Unleashed Recompiled (Android)",
+  "description": {
+    "es": "Port no oficial de Sonic Unleashed (Xbox 360) para Android. Es una recompilación estática del ejecutable del juego a código nativo ARM64, sin emulador: la app incluye controles táctiles, soporte de mando, gestor de mods y drivers Turnip para GPUs Adreno. Requiere importar los archivos de tu propia copia del juego dentro de la app.",
+    "en": "Unofficial port of Sonic Unleashed (Xbox 360) for Android. It is a static recompilation of the game's executable to native ARM64 code, with no emulator: the app includes touch controls, gamepad support, a mod manager and Turnip drivers for Adreno GPUs. Requires importing the game files from your own copy inside the app."
+  },
+  "author": {
+    "name": "SansNope",
+    "contact": "https://github.com/SansNope"
+  },
+  "license": "GPL-3.0-only",
+  "repo": "SansNope/UnleashedRecomp-Android",
+  "asset_pattern": "^UnleashedRecomp_.*\\.apk$",
+  "requires_user_game": true,
+  "no_game_assets": true,
+  "source_url": "https://github.com/SansNope/UnleashedRecomp-Android",
+  "package": "com.sega.sonicunr",
+  "category": "action",
+  "min_sdk_port": 29,
+  "notes": {
+    "es": "Port no oficial de un proyecto de la comunidad; el autor lo describe como experimental. Requiere tu propia copia de Sonic Unleashed para Xbox 360: la app instala un volcado con las carpetas game y update (y dlc opcional). Requiere dispositivo ARM64 y Android 10 o superior. Funciona con GPU Adreno (drivers Turnip incluidos); las Mali recientes son experimentales y PowerVR/Xclipse sin probar. Permite importar drivers Vulkan de la comunidad manualmente; la app se actualiza desde las Releases de su propio repo con verificación de firma y SHA-256. APK de unos 70 MB; los archivos del juego ocupan varios GB.",
+    "en": "Unofficial port from the community; the author describes it as experimental. Requires your own copy of Sonic Unleashed for Xbox 360: the app installs a dump with the game and update folders (and optional dlc). Requires an ARM64 device and Android 10 or higher. Works with Adreno GPUs (bundled Turnip drivers); recent Mali GPUs are experimental and PowerVR/Xclipse are untested. Community Vulkan drivers can be imported manually; the app updates itself from its own repo's Releases with signature and SHA-256 verification. APK of about 70 MB; game files take several GB."
+  }
+}
