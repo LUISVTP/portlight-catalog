@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T21:08:22Z",
+  "generated_at": "2026-10-19T21:47:14Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -40,7 +40,7 @@
         ],
         "published_at": "2026-10-19T01:48:09Z"
       },
-      "last_checked": "2026-10-19T21:08:20Z"
+      "last_checked": "2026-10-19T21:47:13Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -81,7 +81,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-19T21:08:21Z"
+      "last_checked": "2026-10-19T21:47:13Z"
     },
     {
       "id": "naruto-storm-2",
@@ -122,7 +122,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-19T21:08:21Z"
+      "last_checked": "2026-10-19T21:47:13Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -163,7 +163,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-19T21:08:21Z"
+      "last_checked": "2026-10-19T21:47:14Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -204,7 +204,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-19T21:08:21Z"
+      "last_checked": "2026-10-19T21:47:14Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -250,7 +250,7 @@
         ],
         "published_at": "2026-10-14T00:12:09Z"
       },
-      "last_checked": "2026-10-19T21:08:22Z"
+      "last_checked": "2026-10-19T21:47:14Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -290,7 +290,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-19T21:08:22Z"
+      "last_checked": "2026-10-19T21:47:14Z"
     }
   ]
 }
