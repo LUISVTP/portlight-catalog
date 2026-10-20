@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T03:53:00Z",
+  "generated_at": "2026-10-20T10:30:50Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-20T03:52:57Z"
+      "last_checked": "2026-10-20T10:30:48Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-20T03:52:58Z"
+      "last_checked": "2026-10-20T10:30:48Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-20T03:52:58Z"
+      "last_checked": "2026-10-20T10:30:49Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-20T03:52:58Z"
+      "last_checked": "2026-10-20T10:30:49Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-20T03:52:59Z"
+      "last_checked": "2026-10-20T10:30:49Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -253,22 +253,8 @@
         "es": "Sin probar en GPUs Mali (casi todos los equipos MediaTek, Samsung Exynos y Google Tensor). Adreno necesitó workarounds de sus compiladores de shaders (Gráficos > Compatibilidad gráfica); Mali puede necesitar los suyos. Si lo pruebas, abre un issue en el repositorio del port con lo que veas.",
         "en": "Untested on Mali GPUs (most MediaTek, Samsung Exynos and Google Tensor chips). Adreno needed workarounds for its shader compilers (Display > Graphics Compatibility); Mali may need its own. If you try one, please open an issue on the port's repository with what you see."
       },
-      "status": "active",
-      "release": {
-        "tag": "v0.1.1",
-        "source_url_release": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.1.1",
-        "assets": [
-          {
-            "name": "NSMBW-0.1.1-android-arm64.apk",
-            "size": 132558444,
-            "url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/download/v0.1.1/NSMBW-0.1.1-android-arm64.apk",
-            "digest": "sha256:a4273dceff7d3c6e74599921954a1db3b8d59653284a4295e10c5d5754e6239e",
-            "abi": "arm64-v8a"
-          }
-        ],
-        "published_at": "2026-10-14T00:12:09Z"
-      },
-      "last_checked": "2026-10-20T03:52:59Z"
+      "status": "no-release",
+      "last_checked": "2026-10-20T10:30:49Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +297,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-20T03:52:59Z"
+      "last_checked": "2026-10-20T10:30:50Z"
     }
   ]
 }
