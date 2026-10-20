@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T02:19:58Z",
+  "generated_at": "2026-10-20T03:53:00Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -19,6 +19,9 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/zFitness/gow3_android",
+      "screenshots": [
+        "https://raw.githubusercontent.com/zFitness/gow3_android/aa16fa46ea5fecec7a91ca72ddace698584af02e/docs/imgs/home.jpg"
+      ],
       "package": "com.gow3.android.bionic",
       "category": "action",
       "min_sdk_port": 29,
@@ -40,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-20T02:19:56Z"
+      "last_checked": "2026-10-20T03:52:57Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -59,6 +62,9 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/fd4427af5b94bd6fb84440101f1100d89f9b4934/docs/screenshots/menu.png"
+      ],
       "package": "com.naruto.port",
       "category": "action",
       "min_sdk_port": 30,
@@ -81,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-20T02:19:57Z"
+      "last_checked": "2026-10-20T03:52:58Z"
     },
     {
       "id": "naruto-storm-2",
@@ -100,6 +106,10 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/menu.jpg",
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/icone.png"
+      ],
       "package": "com.naruto.storm2",
       "category": "action",
       "min_sdk_port": 30,
@@ -122,7 +132,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-20T02:19:57Z"
+      "last_checked": "2026-10-20T03:52:58Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -141,6 +151,10 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/menu-pc.jpg",
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/icone.png"
+      ],
       "package": "com.naruto.storm3",
       "category": "action",
       "min_sdk_port": 30,
@@ -163,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-20T02:19:57Z"
+      "last_checked": "2026-10-20T03:52:58Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -182,6 +196,10 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/menu.jpg",
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/icone.png"
+      ],
       "package": "com.naruto.stormgenerations",
       "category": "action",
       "min_sdk_port": 30,
@@ -204,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-20T02:19:57Z"
+      "last_checked": "2026-10-20T03:52:59Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -250,7 +268,7 @@
         ],
         "published_at": "2026-10-14T00:12:09Z"
       },
-      "last_checked": "2026-10-20T02:19:57Z"
+      "last_checked": "2026-10-20T03:52:59Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -269,6 +287,9 @@
       "requires_user_game": true,
       "no_game_assets": true,
       "source_url": "https://github.com/SansNope/UnleashedRecomp-Android",
+      "screenshots": [
+        "https://raw.githubusercontent.com/SansNope/UnleashedRecomp-Android/f65c40ba2788ebd7318361670bcbb82cfdef6ae8/UnleashedRecompResources/images/logo/Logo.png"
+      ],
       "package": "com.sega.sonicunr",
       "category": "action",
       "min_sdk_port": 29,
@@ -290,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-20T02:19:58Z"
+      "last_checked": "2026-10-20T03:52:59Z"
     }
   ]
 }
