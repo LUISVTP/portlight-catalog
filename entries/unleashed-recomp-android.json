@@ -15,6 +15,9 @@
   "requires_user_game": true,
   "no_game_assets": true,
   "source_url": "https://github.com/SansNope/UnleashedRecomp-Android",
+  "screenshots": [
+    "https://raw.githubusercontent.com/SansNope/UnleashedRecomp-Android/f65c40ba2788ebd7318361670bcbb82cfdef6ae8/UnleashedRecompResources/images/logo/Logo.png"
+  ],
   "package": "com.sega.sonicunr",
   "category": "action",
   "min_sdk_port": 29,

@@ -15,6 +15,9 @@
   "requires_user_game": true,
   "no_game_assets": true,
   "source_url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/fd4427af5b94bd6fb84440101f1100d89f9b4934/docs/screenshots/menu.png"
+  ],
   "package": "com.naruto.port",
   "category": "action",
   "min_sdk_port": 30,

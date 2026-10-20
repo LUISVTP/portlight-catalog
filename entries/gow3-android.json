@@ -15,6 +15,9 @@
   "requires_user_game": true,
   "no_game_assets": true,
   "source_url": "https://github.com/zFitness/gow3_android",
+  "screenshots": [
+    "https://raw.githubusercontent.com/zFitness/gow3_android/aa16fa46ea5fecec7a91ca72ddace698584af02e/docs/imgs/home.jpg"
+  ],
   "package": "com.gow3.android.bionic",
   "category": "action",
   "min_sdk_port": 29,

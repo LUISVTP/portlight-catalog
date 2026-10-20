@@ -15,6 +15,10 @@
   "requires_user_game": true,
   "no_game_assets": true,
   "source_url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/menu.jpg",
+    "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/icone.png"
+  ],
   "package": "com.naruto.storm2",
   "category": "action",
   "min_sdk_port": 30,
