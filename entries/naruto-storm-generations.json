@@ -16,9 +16,9 @@
   "no_game_assets": true,
   "source_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
   "screenshots": [
-    "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/menu.jpg",
-    "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/icone.png"
+    "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/menu.jpg"
   ],
+  "icon": "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/icone.png",
   "package": "com.naruto.stormgenerations",
   "category": "action",
   "min_sdk_port": 30,

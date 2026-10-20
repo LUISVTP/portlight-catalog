@@ -186,6 +186,11 @@
           "items": { "type": "string", "pattern": "^https://" },
           "description": "Capturas alojadas por el autor, solo con https. / Screenshots hosted by the author, https only."
         },
+        "icon": {
+          "type": "string",
+          "pattern": "^https://",
+          "description": "Icono del port creado por el autor (opcional): mismo patrón y límite de longitud que un elemento de screenshots; alojado por el autor, solo https. / Author-created port icon (optional): same pattern and length limit as a screenshots element; hosted by the author, https only."
+        },
         "package": {
           "type": "string",
           "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z0-9_]+)+$",
