@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T17:21:00Z",
+  "generated_at": "2026-10-20T20:58:28Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-20T17:20:58Z"
+      "last_checked": "2026-10-20T20:58:26Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-20T17:20:59Z"
+      "last_checked": "2026-10-20T20:58:26Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-20T17:20:59Z"
+      "last_checked": "2026-10-20T20:58:27Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-20T17:20:59Z"
+      "last_checked": "2026-10-20T20:58:27Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-20T17:20:59Z"
+      "last_checked": "2026-10-20T20:58:27Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -254,7 +254,7 @@
         "en": "Untested on Mali GPUs (most MediaTek, Samsung Exynos and Google Tensor chips). Adreno needed workarounds for its shader compilers (Display > Graphics Compatibility); Mali may need its own. If you try one, please open an issue on the port's repository with what you see."
       },
       "status": "no-release",
-      "last_checked": "2026-10-20T17:21:00Z"
+      "last_checked": "2026-10-20T20:58:28Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -297,7 +297,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-20T17:21:00Z"
+      "last_checked": "2026-10-20T20:58:28Z"
     }
   ]
 }
