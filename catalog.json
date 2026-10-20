@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T15:54:49Z",
+  "generated_at": "2026-10-20T17:21:00Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-20T15:54:47Z"
+      "last_checked": "2026-10-20T17:20:58Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-20T15:54:48Z"
+      "last_checked": "2026-10-20T17:20:59Z"
     },
     {
       "id": "naruto-storm-2",
@@ -107,9 +107,9 @@
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
       "screenshots": [
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/menu.jpg",
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/icone.png"
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/menu.jpg"
       ],
+      "icon": "https://raw.githubusercontent.com/Masterllgod/naruto-storm-2-port-nativo/8546ce9c1d3b44f53906819654ab5d1a852935a4/docs/screenshots/icone.png",
       "package": "com.naruto.storm2",
       "category": "action",
       "min_sdk_port": 30,
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-20T15:54:48Z"
+      "last_checked": "2026-10-20T17:20:59Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -152,9 +152,9 @@
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo",
       "screenshots": [
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/menu-pc.jpg",
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/icone.png"
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/menu-pc.jpg"
       ],
+      "icon": "https://raw.githubusercontent.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/f983cde50f240c112ffd46c6570a454f9d3b322f/docs/screenshots/icone.png",
       "package": "com.naruto.storm3",
       "category": "action",
       "min_sdk_port": 30,
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-20T15:54:48Z"
+      "last_checked": "2026-10-20T17:20:59Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -197,9 +197,9 @@
       "no_game_assets": true,
       "source_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
       "screenshots": [
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/menu.jpg",
-        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/icone.png"
+        "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/menu.jpg"
       ],
+      "icon": "https://raw.githubusercontent.com/Masterllgod/naruto-storm-generations-port-nativo/80cd6bcee9f84edca9c588ed40198952979b4254/docs/screenshots/icone.png",
       "package": "com.naruto.stormgenerations",
       "category": "action",
       "min_sdk_port": 30,
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-20T15:54:48Z"
+      "last_checked": "2026-10-20T17:20:59Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -254,7 +254,7 @@
         "en": "Untested on Mali GPUs (most MediaTek, Samsung Exynos and Google Tensor chips). Adreno needed workarounds for its shader compilers (Display > Graphics Compatibility); Mali may need its own. If you try one, please open an issue on the port's repository with what you see."
       },
       "status": "no-release",
-      "last_checked": "2026-10-20T15:54:49Z"
+      "last_checked": "2026-10-20T17:21:00Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -297,7 +297,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-20T15:54:49Z"
+      "last_checked": "2026-10-20T17:21:00Z"
     }
   ]
 }
