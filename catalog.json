@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T20:58:28Z",
+  "generated_at": "2026-10-21T02:13:23Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-20T20:58:26Z"
+      "last_checked": "2026-10-21T02:13:22Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -74,20 +74,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.2",
-        "source_url_release": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/tag/v0.2",
+        "tag": "v0.4",
+        "source_url_release": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/tag/v0.4",
         "assets": [
           {
-            "name": "NarutoRiseOfANinja-PortNativo-v0.2-arm64.apk",
-            "size": 40480955,
-            "url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/download/v0.2/NarutoRiseOfANinja-PortNativo-v0.2-arm64.apk",
-            "digest": "sha256:4bfdee073d1ab4ec0bd5860d40d3b1c444d4bd153612d859ba1d16335d8b397c",
+            "name": "NarutoRiseOfANinja-PortNativo-v0.4-arm64.apk",
+            "size": 14581847,
+            "url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo/releases/download/v0.4/NarutoRiseOfANinja-PortNativo-v0.4-arm64.apk",
+            "digest": "sha256:8e1f8e498828b1d3e820db6b26e74479a1fd930ec4165a3dec634b6cc517b671",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-14T21:03:47Z"
+        "published_at": "2026-10-20T23:03:43Z"
       },
-      "last_checked": "2026-10-20T20:58:26Z"
+      "last_checked": "2026-10-21T02:13:22Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-18T05:57:34Z"
       },
-      "last_checked": "2026-10-20T20:58:27Z"
+      "last_checked": "2026-10-21T02:13:22Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-20T20:58:27Z"
+      "last_checked": "2026-10-21T02:13:22Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-20T20:58:27Z"
+      "last_checked": "2026-10-21T02:13:23Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -253,8 +253,22 @@
         "es": "Sin probar en GPUs Mali (casi todos los equipos MediaTek, Samsung Exynos y Google Tensor). Adreno necesitó workarounds de sus compiladores de shaders (Gráficos > Compatibilidad gráfica); Mali puede necesitar los suyos. Si lo pruebas, abre un issue en el repositorio del port con lo que veas.",
         "en": "Untested on Mali GPUs (most MediaTek, Samsung Exynos and Google Tensor chips). Adreno needed workarounds for its shader compilers (Display > Graphics Compatibility); Mali may need its own. If you try one, please open an issue on the port's repository with what you see."
       },
-      "status": "no-release",
-      "last_checked": "2026-10-20T20:58:28Z"
+      "status": "active",
+      "release": {
+        "tag": "v0.2.2",
+        "source_url_release": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.2.2",
+        "assets": [
+          {
+            "name": "NSMBW-0.2.2-android-arm64.apk",
+            "size": 129068736,
+            "url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/download/v0.2.2/NSMBW-0.2.2-android-arm64.apk",
+            "digest": "sha256:1d7a17ac19fa95e9446f0a78cd4ccfa87cc7ef058b5d9ad3e53aa6b1c21e0b28",
+            "abi": "arm64-v8a"
+          }
+        ],
+        "published_at": "2026-10-21T01:22:25Z"
+      },
+      "last_checked": "2026-10-21T02:13:23Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -297,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-20T20:58:28Z"
+      "last_checked": "2026-10-21T02:13:23Z"
     }
   ]
 }
