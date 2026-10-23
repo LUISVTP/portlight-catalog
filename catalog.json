@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T02:17:48Z",
+  "generated_at": "2026-10-23T10:36:32Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -31,19 +31,19 @@
       },
       "status": "active",
       "release": {
-        "tag": "v2.1.7-bionic-v3",
-        "source_url_release": "https://github.com/zFitness/gow3_android/releases/tag/v2.1.7-bionic-v3",
+        "tag": "v2.1.7-bionic-v4",
+        "source_url_release": "https://github.com/zFitness/gow3_android/releases/tag/v2.1.7-bionic-v4",
         "assets": [
           {
-            "name": "God.of.War.III-bionic-2.1.7-bionic-v3.apk",
-            "size": 76205562,
-            "url": "https://github.com/zFitness/gow3_android/releases/download/v2.1.7-bionic-v3/God.of.War.III-bionic-2.1.7-bionic-v3.apk",
-            "digest": "sha256:0bda17adabd41ed6184551a3a3006d0c39a2628ec1c397c12d4e9dc13cd1907d"
+            "name": "God.of.War.III-bionic-2.1.7-bionic-v4.apk",
+            "size": 76455474,
+            "url": "https://github.com/zFitness/gow3_android/releases/download/v2.1.7-bionic-v4/God.of.War.III-bionic-2.1.7-bionic-v4.apk",
+            "digest": "sha256:d6096db13dcfcb82d8ec909a30889b6f994befefd682c532d097c3b92495e458"
           }
         ],
-        "published_at": "2026-10-19T22:59:33Z"
+        "published_at": "2026-10-23T10:32:40Z"
       },
-      "last_checked": "2026-10-23T02:17:46Z"
+      "last_checked": "2026-10-23T10:36:30Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-23T02:17:47Z"
+      "last_checked": "2026-10-23T10:36:31Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-23T00:19:08Z"
       },
-      "last_checked": "2026-10-23T02:17:47Z"
+      "last_checked": "2026-10-23T10:36:31Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-23T02:17:47Z"
+      "last_checked": "2026-10-23T10:36:31Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-23T02:17:47Z"
+      "last_checked": "2026-10-23T10:36:31Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +268,7 @@
         ],
         "published_at": "2026-10-21T01:22:25Z"
       },
-      "last_checked": "2026-10-23T02:17:47Z"
+      "last_checked": "2026-10-23T10:36:32Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-23T02:17:48Z"
+      "last_checked": "2026-10-23T10:36:32Z"
     }
   ]
 }
