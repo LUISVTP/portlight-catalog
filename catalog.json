@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T10:36:32Z",
+  "generated_at": "2026-10-23T15:59:46Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -36,14 +36,14 @@
         "assets": [
           {
             "name": "God.of.War.III-bionic-2.1.7-bionic-v4.apk",
-            "size": 76455474,
+            "size": 76471858,
             "url": "https://github.com/zFitness/gow3_android/releases/download/v2.1.7-bionic-v4/God.of.War.III-bionic-2.1.7-bionic-v4.apk",
-            "digest": "sha256:d6096db13dcfcb82d8ec909a30889b6f994befefd682c532d097c3b92495e458"
+            "digest": "sha256:e8aadb806b673fc4b55b7ece301881d5977bbd0a4c02e8216312a40fba7b6a77"
           }
         ],
         "published_at": "2026-10-23T10:32:40Z"
       },
-      "last_checked": "2026-10-23T10:36:30Z"
+      "last_checked": "2026-10-23T15:59:44Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-23T10:36:31Z"
+      "last_checked": "2026-10-23T15:59:44Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-23T00:19:08Z"
       },
-      "last_checked": "2026-10-23T10:36:31Z"
+      "last_checked": "2026-10-23T15:59:44Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-23T10:36:31Z"
+      "last_checked": "2026-10-23T15:59:44Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-23T10:36:31Z"
+      "last_checked": "2026-10-23T15:59:45Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +268,7 @@
         ],
         "published_at": "2026-10-21T01:22:25Z"
       },
-      "last_checked": "2026-10-23T10:36:32Z"
+      "last_checked": "2026-10-23T15:59:45Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-23T10:36:32Z"
+      "last_checked": "2026-10-23T15:59:45Z"
     }
   ]
 }
