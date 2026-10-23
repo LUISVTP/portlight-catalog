@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T20:54:56Z",
+  "generated_at": "2026-10-23T02:17:48Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-19T22:59:33Z"
       },
-      "last_checked": "2026-10-22T20:54:55Z"
+      "last_checked": "2026-10-23T02:17:46Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-22T20:54:55Z"
+      "last_checked": "2026-10-23T02:17:47Z"
     },
     {
       "id": "naruto-storm-2",
@@ -119,20 +119,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.3.1",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/tag/v0.3.1",
+        "tag": "v0.3.13",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/tag/v0.3.13",
         "assets": [
           {
-            "name": "NarutoStorm2-PortNativo-v0.3.1-arm64.apk",
-            "size": 18869629,
-            "url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/download/v0.3.1/NarutoStorm2-PortNativo-v0.3.1-arm64.apk",
-            "digest": "sha256:71ee40c663428479a343efdbabc3266a4c531d77fe86a7536ddb3f66a5eb9b5d",
+            "name": "NarutoStorm2-PortNativo-v0.3.13-arm64.apk",
+            "size": 18887933,
+            "url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/download/v0.3.13/NarutoStorm2-PortNativo-v0.3.13-arm64.apk",
+            "digest": "sha256:1303e62a833990a9fe3a1f6754b56625da075e9c409161b361130f9f17651069",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-18T05:57:34Z"
+        "published_at": "2026-10-23T00:19:08Z"
       },
-      "last_checked": "2026-10-22T20:54:55Z"
+      "last_checked": "2026-10-23T02:17:47Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +177,7 @@
         ],
         "published_at": "2026-10-18T03:53:23Z"
       },
-      "last_checked": "2026-10-22T20:54:55Z"
+      "last_checked": "2026-10-23T02:17:47Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +222,7 @@
         ],
         "published_at": "2026-10-18T14:31:10Z"
       },
-      "last_checked": "2026-10-22T20:54:55Z"
+      "last_checked": "2026-10-23T02:17:47Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +268,7 @@
         ],
         "published_at": "2026-10-21T01:22:25Z"
       },
-      "last_checked": "2026-10-22T20:54:56Z"
+      "last_checked": "2026-10-23T02:17:47Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-22T20:54:56Z"
+      "last_checked": "2026-10-23T02:17:48Z"
     }
   ]
 }
