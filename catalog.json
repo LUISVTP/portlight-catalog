@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T17:19:43Z",
+  "generated_at": "2026-10-30T21:44:41Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-23T10:32:40Z"
       },
-      "last_checked": "2026-10-30T17:19:41Z"
+      "last_checked": "2026-10-30T21:44:39Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-30T17:19:41Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +132,7 @@
         ],
         "published_at": "2026-10-30T12:20:45Z"
       },
-      "last_checked": "2026-10-30T17:19:41Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -164,20 +164,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.6.10",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/tag/v0.6.10",
+        "tag": "v0.6.11",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/tag/v0.6.11",
         "assets": [
           {
-            "name": "NarutoStorm3FullBurst-PortNativo-v0.6.10-arm64.apk",
-            "size": 22583059,
-            "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/download/v0.6.10/NarutoStorm3FullBurst-PortNativo-v0.6.10-arm64.apk",
-            "digest": "sha256:74d6973ffe3c1a32d9ec1edb341aa1427b8086850fe3df17b902e3816e6c7f08",
+            "name": "NarutoStorm3FullBurst-PortNativo-v0.6.11-arm64.apk",
+            "size": 22583651,
+            "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/download/v0.6.11/NarutoStorm3FullBurst-PortNativo-v0.6.11-arm64.apk",
+            "digest": "sha256:285e96651e455d3287630063f96d5aebaa218c5f23d0fbb9a3cce13cf64a11b2",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-30T14:42:02Z"
+        "published_at": "2026-10-30T18:17:21Z"
       },
-      "last_checked": "2026-10-30T17:19:42Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -209,20 +209,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.4.9",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.4.9",
+        "tag": "v0.4.11",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.4.11",
         "assets": [
           {
-            "name": "NarutoStormGenerations-PortNativo-v0.4.9-arm64.apk",
-            "size": 15269390,
-            "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.4.9/NarutoStormGenerations-PortNativo-v0.4.9-arm64.apk",
-            "digest": "sha256:473b48f69241ec8702d879185e043817e21d6bb2037bf689dc578caa46140b13",
+            "name": "NarutoStormGenerations-PortNativo-v0.4.11-arm64.apk",
+            "size": 15278198,
+            "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.4.11/NarutoStormGenerations-PortNativo-v0.4.11-arm64.apk",
+            "digest": "sha256:e14786e0128b5d69b3bb371632740b84bf65a488a7f6ffefaa63cd801d5f7b4d",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-30T12:20:53Z"
+        "published_at": "2026-10-30T18:17:26Z"
       },
-      "last_checked": "2026-10-30T17:19:42Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +268,7 @@
         ],
         "published_at": "2026-10-29T07:21:44Z"
       },
-      "last_checked": "2026-10-30T17:19:42Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-30T17:19:42Z"
+      "last_checked": "2026-10-30T21:44:40Z"
     }
   ]
 }
