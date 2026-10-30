@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T11:45:39Z",
+  "generated_at": "2026-10-30T17:19:43Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -43,7 +43,7 @@
         ],
         "published_at": "2026-10-23T10:32:40Z"
       },
-      "last_checked": "2026-10-30T11:45:37Z"
+      "last_checked": "2026-10-30T17:19:41Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +87,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-10-30T11:45:38Z"
+      "last_checked": "2026-10-30T17:19:41Z"
     },
     {
       "id": "naruto-storm-2",
@@ -119,20 +119,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.5.1",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/tag/v0.5.1",
+        "tag": "v0.5.8",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/tag/v0.5.8",
         "assets": [
           {
-            "name": "NarutoStorm2-PortNativo-v0.5.1-arm64.apk",
-            "size": 26764417,
-            "url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/download/v0.5.1/NarutoStorm2-PortNativo-v0.5.1-arm64.apk",
-            "digest": "sha256:fd645ceac41c2a752e4b3735c610d38dac424ed59a18262fa1d534cdc76a6f4f",
+            "name": "NarutoStorm2-PortNativo-v0.5.8-arm64.apk",
+            "size": 27168236,
+            "url": "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases/download/v0.5.8/NarutoStorm2-PortNativo-v0.5.8-arm64.apk",
+            "digest": "sha256:b7be36aa8f3ebb3a80043beca94cb49b03e2b0a3903a26223182d830ffe762cd",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-28T17:25:11Z"
+        "published_at": "2026-10-30T12:20:45Z"
       },
-      "last_checked": "2026-10-30T11:45:38Z"
+      "last_checked": "2026-10-30T17:19:41Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -164,20 +164,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.5.4",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/tag/v0.5.4",
+        "tag": "v0.6.10",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/tag/v0.6.10",
         "assets": [
           {
-            "name": "NarutoStorm3FullBurst-PortNativo-v0.5.4-arm64.apk",
-            "size": 22093848,
-            "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/download/v0.5.4/NarutoStorm3FullBurst-PortNativo-v0.5.4-arm64.apk",
-            "digest": "sha256:563acc3dc264f156d45d95e8292fb778f70e73c13b5f84b9dda8b0f51aae623f",
+            "name": "NarutoStorm3FullBurst-PortNativo-v0.6.10-arm64.apk",
+            "size": 22583059,
+            "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo/releases/download/v0.6.10/NarutoStorm3FullBurst-PortNativo-v0.6.10-arm64.apk",
+            "digest": "sha256:74d6973ffe3c1a32d9ec1edb341aa1427b8086850fe3df17b902e3816e6c7f08",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-28T17:25:06Z"
+        "published_at": "2026-10-30T14:42:02Z"
       },
-      "last_checked": "2026-10-30T11:45:38Z"
+      "last_checked": "2026-10-30T17:19:42Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -209,20 +209,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.4.2",
-        "source_url_release": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.4.2",
+        "tag": "v0.4.9",
+        "source_url_release": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.4.9",
         "assets": [
           {
-            "name": "NarutoStormGenerations-PortNativo-v0.4.2-arm64.apk",
-            "size": 14962571,
-            "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.4.2/NarutoStormGenerations-PortNativo-v0.4.2-arm64.apk",
-            "digest": "sha256:6edb6eeac607574100271b8c848e4c877dacfcb740dea8ba520f466c8498f94b",
+            "name": "NarutoStormGenerations-PortNativo-v0.4.9-arm64.apk",
+            "size": 15269390,
+            "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.4.9/NarutoStormGenerations-PortNativo-v0.4.9-arm64.apk",
+            "digest": "sha256:473b48f69241ec8702d879185e043817e21d6bb2037bf689dc578caa46140b13",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-10-28T17:25:16Z"
+        "published_at": "2026-10-30T12:20:53Z"
       },
-      "last_checked": "2026-10-30T11:45:38Z"
+      "last_checked": "2026-10-30T17:19:42Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +268,7 @@
         ],
         "published_at": "2026-10-29T07:21:44Z"
       },
-      "last_checked": "2026-10-30T11:45:39Z"
+      "last_checked": "2026-10-30T17:19:42Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +311,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-10-30T11:45:39Z"
+      "last_checked": "2026-10-30T17:19:42Z"
     }
   ]
 }
