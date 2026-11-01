@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T02:49:50Z",
+  "generated_at": "2026-11-01T12:09:12Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -29,21 +29,8 @@
         "es": "Requiere los archivos de tu propia PS4: CUSA01740 con la actualización 01.02 aplicada (carpeta con eboot.bin, sce_module y sce_sys); es la única versión que el autor declara probada en Android. Versión de prueba en desarrollo: el autor no ha verificado la compatibilidad en todos los dispositivos ni publica cifras de rendimiento estables. Requiere dispositivo ARM64 y Android 10 o superior. Solo GPU Adreno (driver Turnip); sin soporte declarado para Mali ni otras GPU. El launcher puede descargar drivers Turnip de la comunidad desde repositorios de terceros (opcional; el APK ya incluye un driver) y reintenta la descarga mediante un espejo si falla el acceso directo. Descarga de unos 76 MB.",
         "en": "Requires the files from your own PS4: CUSA01740 with the 01.02 update applied (a folder containing eboot.bin, sce_module and sce_sys); the only version the author reports as tested on Android. Experimental work-in-progress build: the author has not verified compatibility on all devices and publishes no stable performance figures. Requires an ARM64 device and Android 10 or higher. Adreno GPUs only (Turnip driver); no declared support for Mali or other GPUs. The launcher can download community Turnip drivers from third-party repositories (optional; the APK already bundles a driver) and retries the download through a mirror if the direct connection fails. Download of about 76 MB."
       },
-      "status": "active",
-      "release": {
-        "tag": "v2.1.7-bionic-v4",
-        "source_url_release": "https://github.com/zFitness/gow3_android/releases/tag/v2.1.7-bionic-v4",
-        "assets": [
-          {
-            "name": "God.of.War.III-bionic-2.1.7-bionic-v4.apk",
-            "size": 76471858,
-            "url": "https://github.com/zFitness/gow3_android/releases/download/v2.1.7-bionic-v4/God.of.War.III-bionic-2.1.7-bionic-v4.apk",
-            "digest": "sha256:e8aadb806b673fc4b55b7ece301881d5977bbd0a4c02e8216312a40fba7b6a77"
-          }
-        ],
-        "published_at": "2026-10-23T10:32:40Z"
-      },
-      "last_checked": "2026-11-01T02:49:48Z"
+      "status": "no-release",
+      "last_checked": "2026-11-01T12:09:09Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -87,7 +74,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-11-01T02:49:49Z"
+      "last_checked": "2026-11-01T12:09:10Z"
     },
     {
       "id": "naruto-storm-2",
@@ -132,7 +119,7 @@
         ],
         "published_at": "2026-10-31T22:27:40Z"
       },
-      "last_checked": "2026-11-01T02:49:49Z"
+      "last_checked": "2026-11-01T12:09:10Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -177,7 +164,7 @@
         ],
         "published_at": "2026-10-30T18:17:21Z"
       },
-      "last_checked": "2026-11-01T02:49:49Z"
+      "last_checked": "2026-11-01T12:09:10Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -222,7 +209,7 @@
         ],
         "published_at": "2026-10-30T18:17:26Z"
       },
-      "last_checked": "2026-11-01T02:49:49Z"
+      "last_checked": "2026-11-01T12:09:11Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -268,7 +255,7 @@
         ],
         "published_at": "2026-10-29T07:21:44Z"
       },
-      "last_checked": "2026-11-01T02:49:50Z"
+      "last_checked": "2026-11-01T12:09:11Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -311,7 +298,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-11-01T02:49:50Z"
+      "last_checked": "2026-11-01T12:09:11Z"
     }
   ]
 }
