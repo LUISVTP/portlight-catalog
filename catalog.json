@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T22:57:44Z",
+  "generated_at": "2026-11-06T03:52:52Z",
   "ports": [
     {
       "id": "gow3-android",
@@ -30,7 +30,7 @@
         "en": "Requires the files from your own PS4: CUSA01740 with the 01.02 update applied (a folder containing eboot.bin, sce_module and sce_sys); the only version the author reports as tested on Android. Experimental work-in-progress build: the author has not verified compatibility on all devices and publishes no stable performance figures. Requires an ARM64 device and Android 10 or higher. Adreno GPUs only (Turnip driver); no declared support for Mali or other GPUs. The launcher can download community Turnip drivers from third-party repositories (optional; the APK already bundles a driver) and retries the download through a mirror if the direct connection fails. Download of about 76 MB."
       },
       "status": "no-release",
-      "last_checked": "2026-11-05T22:57:42Z"
+      "last_checked": "2026-11-06T03:52:50Z"
     },
     {
       "id": "naruto-rise-of-a-ninja",
@@ -74,7 +74,7 @@
         ],
         "published_at": "2026-10-14T21:03:47Z"
       },
-      "last_checked": "2026-11-05T22:57:42Z"
+      "last_checked": "2026-11-06T03:52:50Z"
     },
     {
       "id": "naruto-storm-2",
@@ -119,7 +119,7 @@
         ],
         "published_at": "2026-11-03T16:52:57Z"
       },
-      "last_checked": "2026-11-05T22:57:42Z"
+      "last_checked": "2026-11-06T03:52:50Z"
     },
     {
       "id": "naruto-storm-3-fb",
@@ -164,7 +164,7 @@
         ],
         "published_at": "2026-11-03T17:10:39Z"
       },
-      "last_checked": "2026-11-05T22:57:43Z"
+      "last_checked": "2026-11-06T03:52:50Z"
     },
     {
       "id": "naruto-storm-generations",
@@ -209,7 +209,7 @@
         ],
         "published_at": "2026-11-03T17:10:46Z"
       },
-      "last_checked": "2026-11-05T22:57:43Z"
+      "last_checked": "2026-11-06T03:52:51Z"
     },
     {
       "id": "nsmbw-recomp",
@@ -242,20 +242,20 @@
       },
       "status": "active",
       "release": {
-        "tag": "v0.4.0",
-        "source_url_release": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.4.0",
+        "tag": "v0.3.1",
+        "source_url_release": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.3.1",
         "assets": [
           {
-            "name": "NSMBW-0.4.0-android-arm64.apk",
-            "size": 133055932,
-            "url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/download/v0.4.0/NSMBW-0.4.0-android-arm64.apk",
-            "digest": "sha256:c220cacff2d4391a65639af9e633f8263932958dd8c3eb046e7c339d65e8964d",
+            "name": "NSMBW-0.3.1-android-arm64.apk",
+            "size": 131511572,
+            "url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/download/v0.3.1/NSMBW-0.3.1-android-arm64.apk",
+            "digest": "sha256:d1dbb658d41868712873e4ef48e7b1bb17576167f8d8fde1b56fab5d9ed43df3",
             "abi": "arm64-v8a"
           }
         ],
-        "published_at": "2026-11-05T21:41:40Z"
+        "published_at": "2026-10-29T07:21:44Z"
       },
-      "last_checked": "2026-11-05T22:57:43Z"
+      "last_checked": "2026-11-06T03:52:51Z"
     },
     {
       "id": "unleashed-recomp-android",
@@ -298,7 +298,7 @@
         ],
         "published_at": "2026-10-10T02:06:44Z"
       },
-      "last_checked": "2026-11-05T22:57:43Z"
+      "last_checked": "2026-11-06T03:52:51Z"
     }
   ]
 }
